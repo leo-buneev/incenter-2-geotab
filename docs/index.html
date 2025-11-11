@@ -1,37 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Incenter 2 - Geotab Adapter</title>
     <style>
-        /* Reset default margins and padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Make html and body take full viewport */
-        html, body {
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-        }
-
-        /* Style the iframe to be seamless and full-page */
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            display: block;
-        }
+      /* Reset default margins and padding */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
     </style>
-</head>
-<body>
-    <iframe src="https://prague.test.tyrecheck.com/incenter2/" 
-            title="Incenter 2"
-            allowfullscreen>
-    </iframe>
-</body>
+  </head>
+  <body style="height: 100%; width: 100%; position: absolute; overflow: hidden">
+    <!-- src="https://prague.test.tyrecheck.com/incenter2/"  -->
+    <script>
+      console.log('test')
+    </script>
+
+    <iframe
+      src="https://democp.tirecheck.com/incenter2/"
+      onload="console.log(this.contentWindow.document)"
+      title="Incenter 2"
+      style="width: 100%; height: 100%; border: none; display: block"
+      allowfullscreen
+    ></iframe>
+  </body>
 </html>
